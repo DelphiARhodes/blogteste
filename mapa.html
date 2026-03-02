@@ -60,13 +60,14 @@
 
         // 3. ADICIONE SEUS PONTOS AQUI
         // Para adicionar um novo ponto em Venâncio Aires, por exemplo:
-        L.marker([-29.6075, -52.1919]).addTo(map)
-            .bindPopup('<b>Concurso Venâncio Aires</b><br>Prefeitura Municipal<br><a href="#" class="popup-link">Ver Notícia</a>');
 
         // Exemplo: Brasília
         L.marker([-15.7941, -47.8825]).addTo(map)
             .bindPopup('<b>Concurso Nacional Unificado</b><br>Vagas Federais<br><a href="categorias/editais.html" class="popup-link">Ver Detalhes</a>');
         
+        L.marker([-3103, -92301]).addTo(map
+            .bindPopup('<b>Concurso Nacional Unificado</b><br>Vagas Federais<br><a href="categorias/editais.html" class="popup-link">Ver Detalhes</a>')
+        )
         // Adiciona a barra de busca ao mapa
         var geocoder = L.Control.geocoder({
         defaultMarkGeocode: false,
